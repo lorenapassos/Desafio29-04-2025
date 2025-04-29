@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Contador de Cliques</title>
+</head>
+<body>
+    <button id="btn-contar">Clique aqui</button>
+    <button id="btn-resetar">Resetar</button>
+    <div id="resultado">
+        Total de cliques: <span id="contador">0</span>
+    </div>
+
+<script>
+let contador = 0;
+const btnContar = document.getElementById("btn-contar");
+const btnResetar = document.getElementById("btn-resetar");
+const campoContador = document.getElementById("contador");
+
+function contarClique() {
+    contador++;
+    campoContador.textContent = contador;
+}
+
+function resetarContador() {
+    contador = 0;
+    campoContador.textContent = contador;
+}
+
+btnContar.addEventListener("click", contarClique);
+btnResetar.addEventListener("click", resetarContador);
+</script>
+
+</body>
+</html>
+
+<!-- Primeiro Prompt: Vamos Criar um contador de cliques em uma pagina HTML, com dois botões: 
+um botão para contar os cliques e um botão para resetar, vamos criar funções em JavaScript 
+para realizar as ações do contador-->
+
+<!-- Segundo Prompt: Qual a diferença entre addEventListener e getElementById e por que estamos usando
+na ordem que estamos usando nesse caso -->
+
+<!-- Terceiro Prompt: Corrija os possiveis  erros na estrutura para garantir que o código 
+ funcione, não corrija para mim me aponte e explique os erros para que eu possa entender-->
+ 
