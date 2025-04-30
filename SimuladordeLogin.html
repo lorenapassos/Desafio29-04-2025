@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Simulador de Login</title>
+</head>
+<body>
+
+<input type="text" id="usuario" placeholder="Digite seu usuario">
+<input type="password" id="senha" placeholder="Digite sua senha">
+<button onclick="realizarLogin()">Entrar</button>
+<div id="mensagemLogin"></div>
+
+<script>
+
+function realizarLogin() {
+var usuario = document.getElementById("usuario").value;
+var senha = document.getElementById("senha").value;
+
+var usuarioCorreto = "admin";
+var senhaCorreta = "54321";
+
+            
+if (usuario === usuarioCorreto && senha === senhaCorreta) {
+    document.getElementById("mensagemLogin").textContent = "Seja Bem-vindo(a), " + usuario + "!";
+} else {
+    document.getElementById("mensagemLogin").textContent = "Usuário ou senha incorretos. Tente novamente.";
+ }
+}
+    </script>
+</body>
+</html>
+
+<!--Primeiro Prompt: Vamos criar um simulador de login em uma pagina HTML--> 
+
+<!--Segundo Prompt: O nosso objetivo é usar input, getElementById, button e div-->
+
+<!--Terceiro Prompt: Corrija os possiveis  erros na estrutura para garantir que o código 
+ funcione, não corrija para mim me aponte e explique os erros para que eu possa entender-->
